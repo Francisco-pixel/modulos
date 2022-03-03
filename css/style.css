@@ -1,13 +1,26 @@
 :root{
     --border:1px solid #ddd;
+    --h:0;
+    --l:0%;
+    --s:0%;
 }
 *{
     padding:0;
     margin:0;
     box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,
+.shadow
+{
+    background:hsl(
+        var(--h), 
+        var(--s), 
+        var(--l)
+        );
 }
 body{
-    background:#f1f1f1;
+    --l:30%;
 }
 html{
     scroll-behavior:smooth;
@@ -19,6 +32,66 @@ img{
 }
 ul,ol{
     list-style:none;
+}
+/* caja */
+.caja
+{
+    width:100%;
+    height:100vh;
+}
+/* Caja isotipo */
+.caja__isotipo
+{
+    --wh:10rem;
+    width:var(--wh);
+    height:var(--wh);
+    border:0.5rem solid hsl(0,0%,70%);
+    border-radius:50%;
+    animation:saltar 1s alternate infinite;
+}
+@keyframes saltar{
+    0%
+    {
+        transform:translateY(0);
+    }
+    100%
+    {
+        transform:translateY(-3rem);
+    }
+}
+/* Caja m */
+.caja__m
+{
+    color:hsl(0,0%,70%);
+    font-size:5rem;
+}
+/* Caja modulos */
+.caja__modulos
+{
+    color:hsl(200,100%,50%);
+}
+/* shadow */
+.shadow
+{
+    transform:translateY(-0.2rem);
+    width:10rem;
+    height:0.5rem;
+    border-radius:50%;
+    --l:10%;
+    z-index:-1;
+    animation:shadow 1s alternate infinite;
+}
+@keyframes shadow{
+    0%
+    {
+        width:6rem;
+        opacity:1;
+    }
+    100%
+    {
+        width:2rem;
+        opacity:0.4;
+    }
 }
 /* Load */
 .load{
