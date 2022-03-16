@@ -1,4 +1,4 @@
-import { d } from "./data.js";
+import { c, d } from "./data.js";
 import { conexionInternet } from "./conexionInternet.js";
 import { tiempo } from "./fecha.js";
 import { crearNodo } from "./crearNodo.js";
@@ -7,7 +7,9 @@ import { padreHijo } from "./padreHijo.js";
 import { setText } from "./setText.js";
 import { btnUp } from "./botonSubir.js";
 import { copiarText } from "./copiarText.js";
+import { userAgent } from "./usertAgent.js";
 conexionInternet()
 btnUp()
 tiempo()
 copiarText()
+userAgent()
