@@ -52,7 +52,7 @@ let userAgent = () => {
         }
         if(d.querySelector(".device-browser")){
             d.querySelector(".device-browser").innerHTML=`${browser.any()}`;
-            d.querySelector(".device-title").innerHTML="Navegador";
+            d.querySelector(".browser-title").innerHTML="Navegador";
         }
 }
 
