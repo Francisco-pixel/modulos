@@ -37,8 +37,8 @@ let userAgent = () => {
                     this.firefox();
             }
         };
-        if(d.querySelector(".width-height")){
-            d.querySelector(".width-height").innerHTML=`${width}px * ${height}px`;
+        if(d.querySelector(".device-width-height")){
+            d.querySelector(".device-width-height").innerHTML=`${width}px * ${height}px`;
         }
         if(d.querySelector(".device-title")){
             d.querySelector(".device-title").innerHTML=`${device.any()}`;
