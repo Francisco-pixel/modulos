@@ -48,10 +48,11 @@ let userAgent = () => {
         }
         if(d.querySelector(".device-procesador")&&procesador.bit()){
             d.querySelector(".device-procesador").innerHTML=`${procesador.bit()} - bit`;
-            d.querySelector(".procesador").innerHTML="Procesador";
+            d.querySelector(".procesador-title").innerHTML="Procesador";
         }
         if(d.querySelector(".device-browser")){
             d.querySelector(".device-browser").innerHTML=`${browser.any()}`;
+            d.querySelector(".device-title").innerHTML="Navegador";
         }
 }
 
