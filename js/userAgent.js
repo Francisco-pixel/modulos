@@ -40,14 +40,15 @@ let userAgent = () => {
         if(d.querySelector(".width-height")){
             d.querySelector(".width-height").innerHTML=`${width}px * ${height}px`;
         }
-        if(d.querySelector(".device")){
-            d.querySelector(".device").innerHTML=`${device.any()}`;
+        if(d.querySelector(".device-title")){
+            d.querySelector(".device-title").innerHTML=`${device.any()}`;
         }
         if(d.querySelector(".device-logo")){
             d.querySelector(".device-logo").src=logos[device.any()];
         }
         if(d.querySelector(".device-procesador")&&procesador.bit()){
             d.querySelector(".device-procesador").innerHTML=`${procesador.bit()} - bit`;
+            d.querySelector(".procesador").innerHTML="Procesador";
         }
         if(d.querySelector(".device-browser")){
             d.querySelector(".device-browser").innerHTML=`${browser.any()}`;
