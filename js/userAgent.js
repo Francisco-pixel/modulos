@@ -14,11 +14,11 @@ let userAgent = () => {
             }
         },
         logos = {
-            "Window": "./img/window.png",
-            "Android": "./img/android.png",
-            "iPhone": "./img/apple.png",
-            "iPad": "./img/apple.png",
-            "iPod": "./img/apple.png"
+            "Window": "https://francisco-pixel.github.io/modulos/img/window.png",
+            "Android": "https://francisco-pixel.github.io/modulos/img/android.png",
+            "iPhone": "https://francisco-pixel.github.io/modulos/img/apple.png",
+            "iPad": "https://francisco-pixel.github.io/modulos/img/apple.png",
+            "iPod": "https://francisco-pixel.github.io/modulos/img/apple.png"
         },
         procesador = {
             bit: () => ua.match(/32|64/i)
