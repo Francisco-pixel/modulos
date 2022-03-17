@@ -7,7 +7,7 @@ import { padreHijo } from "./padreHijo.js";
 import { setText } from "./setText.js";
 import { btnUp } from "./botonSubir.js";
 import { copiarText } from "./copiarText.js";
-import { userAgent } from "./usertAgent.js";
+import { userAgent } from "./userAgent.js";
 conexionInternet()
 btnUp()
 tiempo()
