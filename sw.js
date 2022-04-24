@@ -23,9 +23,10 @@ cache_file = [
     "./img/android.png",
     "./img/apple.png",
     "./img/fco-pixel.png",
-    "./img/window.png"
+    "./img/window.png",
+    "https://kit.fontawesome.com/925af5c22c.js"
 ];
-self.addEventListener("install",e=>{
+/* self.addEventListener("install",e=>{
     const CACHEADO=caches.open(cache_name)
     .then(res=>{
     return res.addAll(cache_file)
@@ -38,8 +39,8 @@ self.addEventListener("fetch",e=>{
         fetch(e.request)
         .catch(()=>caches.match(e.request))
     )
-})
-/* //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
+}) */
+//durante la fase de instalación, generalmente se almacena en caché los activos estáticos
     self.addEventListener('install', e => {
         e.waitUntil(
             caches.open(cache_name)
@@ -86,6 +87,6 @@ self.addEventListener("fetch",e=>{
                     return fetch(e.request)
                 })
         )
-    }) */
+    })
 
  
