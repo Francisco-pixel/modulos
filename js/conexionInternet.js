@@ -26,7 +26,7 @@ export let conexionInternet = () => {
     w.addEventListener("online", () => {
         conex({
             "atributo":".conexion",
-            "msn":"Conexion Establecida", 
+            "msn":"¡Llegó el internet!",
             "color":"#73ff7e", 
             "sh":"0 0 5px #37ff04,0 0 20px #37ff04"
         });
