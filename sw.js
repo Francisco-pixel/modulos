@@ -25,7 +25,21 @@ cache_file = [
     "./img/fco-pixel.png",
     "./img/window.png"
 ];
-//durante la fase de instalación, generalmente se almacena en caché los activos estáticos
+self.addEventListener("install",e=>{
+    const CACHEADO=caches.open(cache_name)
+    .then(res=>{
+    return res.addAll(cache_file)
+    })
+    e.waitUntil(CACHEADO);
+})
+
+self.addEventListener("fetch",e=>{
+    e.respondWith(
+        fetch(e.request)
+        .catch(()=>caches.match(e.request))
+    )
+})
+/* //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
     self.addEventListener('install', e => {
         e.waitUntil(
             caches.open(cache_name)
@@ -72,6 +86,6 @@ cache_file = [
                     return fetch(e.request)
                 })
         )
-    })
+    }) */
 
  
