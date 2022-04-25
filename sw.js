@@ -1,7 +1,6 @@
 let cache_name = "cache-modulos",
 cache_file = [
     "./index.html",
-    "./sw.js",
     "./css/style.css",
     "./js/alerta.js",
     "./js/botonSubir.js",
