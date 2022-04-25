@@ -2,7 +2,7 @@
     "name": "Modulos App",
     "short_name": "Modulos",
     "description": "Está herramienta de modulos funciona para insertar muchas funciones interesantes en tu web :)",
-    "background_color": "#2B2B2B",
+    "background_color": "#fff",
     "theme_color": "#2583c5",
     "orientation": "portrait",
     "display": "standalone",
