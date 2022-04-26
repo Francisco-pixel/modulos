@@ -1,38 +1,43 @@
 import {d} from "./data.js"
 /* Crear nodo */
 export {crearNodo};
-let crearNodo = ({element, setAtribute, atribute}) => {
-    let node = d.createElement(`${element}`);
-    node.setAttribute(atribute, `${setAtribute}`);
+let crearNodo = ({elemento, setAtributo, atributo}) => {
+    let node = d.createElement(`${elemento}`);
+    node.setAttribute(atributo, `${setAtributo}`);
     d.body.appendChild(node);
 }
 crearNodo({
-    "element":"div",
-    "setAtribute":"load",
-    "atribute":"class"
+    "elemento":"div",
+    "setAtributo":"load",
+    "atributo":"class"
 })
 crearNodo({
-    "element":"div",
-    "setAtribute":"btn",
-    "atribute":"class"
+    "elemento":"div",
+    "setAtributo":"btn",
+    "atributo":"class"
 })
 crearNodo({
-    "element":"p",
-    "setAtribute":"text",
-    "atribute":"class"
+    "elemento":"p",
+    "setAtributo":"text",
+    "atributo":"class"
 })
 crearNodo({
-    "element":"div",
-    "setAtribute":"btn-subir ocultar--btn",
-    "atribute":"class"
+    "elemento":"div",
+    "setAtributo":"btn-subir ocultar--btn",
+    "atributo":"class"
 })
 crearNodo({
-    "element":"div",
-    "setAtribute":"conexion",
-    "atribute":"class"
+    "elemento":"div",
+    "setAtributo":"conexion",
+    "atributo":"class"
 })
 crearNodo({
-    "element":"div", 
-    "setAtribute":"spin",
-    "atribute":"class"
+    "elemento":"div", 
+    "setAtributo":"spin",
+    "atributo":"class"
+})
+crearNodo({
+    "elemento":"div", 
+    "setAtributo":"alerta",
+    "atributo":"class"
 })

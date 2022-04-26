@@ -10,7 +10,7 @@ export let copiarText = () => {
             d.execCommand("copy")
             d.body.removeChild(input);
             alerta({
-                "atributo": ".conexion",
+                "atributo": ".alerta",
                 "msn": `"Texto copiado en el portapapeles"`,
                 "color": "#fff",
                 "bg": "#343434"

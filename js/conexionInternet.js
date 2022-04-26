@@ -11,7 +11,7 @@ export let conexionInternet = () => {
         conexion.style.background = `#343434`;
         conexion.style.padding = `1rem`;
         conexion.style.textAlign = `center`;
-        conexion.style.position = `absolute`;
+        conexion.style.position = `fixed`;
         conexion.style.top = `0`;
         conexion.style.transition = `all 0.5s ease`;
         conexion.style.width = `100%`;
