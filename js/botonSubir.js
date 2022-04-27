@@ -1,7 +1,8 @@
-import { d, w } from "./data.js";
 export { btnUp, btnUpStyle }
 /* Botón para subir */
-let btnUp = () => {
+let d=document,
+w=window,
+btnUp = () => {
     if (d.querySelector(".btn-subir")) {
         let btn_subir = d.querySelector(".btn-subir");
         btn_subir.classList.add("btn-subir")
@@ -22,7 +23,7 @@ let btnUp = () => {
         });
     }
 }
-let btnUpStyle = ({element, bg, wh}) => {
+let btnUpStyle = ({element=".btn-subir", bg="#2f6574", wh="50px"}) => {
     if (d.querySelector(`${element}`)) {
         let btn = d.querySelector(`${element}`);
         btn.style.background = bg;

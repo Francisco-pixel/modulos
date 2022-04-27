@@ -1,13 +1,15 @@
-import {d} from "./data.js"
 export {padreHijo}
-let padreHijo = ({p, h}) => {
-    d.querySelector(p).appendChild(d.querySelector(h))
+let d=document,
+padreHijo = ({padre, hijo}) => {
+    if(d.querySelector(padre)){
+        d.querySelector(padre).appendChild(d.querySelector(hijo))
+    }
 }
 padreHijo({
-    "p":".load", 
-    "h":".spin"
+    "padre":".load",
+    "hijo":".spin"
 })
 padreHijo({
-    "p":".load", 
-    "h":".text"
+    "padre":".load", 
+    "hijo":".text"
 })

@@ -1,4 +1,3 @@
-import { c, d } from "./data.js";
 import { conexionInternet } from "./conexionInternet.js";
 import { tiempo } from "./fecha.js";
 import { crearNodo } from "./crearNodo.js";

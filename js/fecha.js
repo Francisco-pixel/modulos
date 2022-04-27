@@ -1,6 +1,6 @@
 /* Fecha y hora */
-import { d } from "./data.js";
-export let tiempo = () => {
+export let d=document,
+tiempo = () => {
     let dias = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"],
         meses = ["enero", "febrero", "marzo", "abril", "mayo",
             "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],

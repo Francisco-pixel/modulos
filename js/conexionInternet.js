@@ -1,5 +1,5 @@
-import {d,w} from "./data.js";
-
+let d=document,
+w=window;
 export let conexionInternet = () => {
     /*Alerta de conexión*/
     let conex = ({atributo,msn, color, sh}) => {

@@ -1,4 +1,4 @@
-export let alerta = ({atributo,msn, color, sh,bg}) => {
+export let alerta = ({atributo=".alerta",msn="No haz puesto un mensaje", color="#fff", sh,bg="#949494"}) => {
     let conexion=document.querySelector(atributo);
     conexion.innerHTML = `${msn}`;
     conexion.style.top = "0%";

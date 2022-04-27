@@ -1,7 +1,7 @@
-import {d} from "./data.js"
 /* Crear nodo */
 export {crearNodo};
-let crearNodo = ({elemento, setAtributo, atributo}) => {
+let d=document,
+crearNodo = ({elemento, setAtributo, atributo}) => {
     let node = d.createElement(`${elemento}`);
     node.setAttribute(atributo, `${setAtributo}`);
     d.body.appendChild(node);

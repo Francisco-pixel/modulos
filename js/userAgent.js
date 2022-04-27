@@ -1,6 +1,8 @@
-import { c, d, n, l, w } from "./data.js"
 export { userAgent };
-let userAgent = () => {
+let d=document,
+w=window,
+n=navigator,
+userAgent = () => {
     let { width, height } = w.screen,
         ua = n.userAgent,
         device = {
@@ -13,12 +15,13 @@ let userAgent = () => {
                     this.window();
             }
         },
+        link="https://francisco-pixel.github.io/modulos/img/",
         logos = {
-            "Window": "https://francisco-pixel.github.io/modulos/img/window.png",
-            "Android": "https://francisco-pixel.github.io/modulos/img/android.png",
-            "iPhone": "https://francisco-pixel.github.io/modulos/img/apple.png",
-            "iPad": "https://francisco-pixel.github.io/modulos/img/apple.png",
-            "iPod": "https://francisco-pixel.github.io/modulos/img/apple.png"
+            "Window": `${link}window.png`,
+            "Android": `${link}android.png`,
+            "iPhone": `${link}apple.png`,
+            "iPad": `${link}apple.png`,
+            "iPod": `${link}apple.png`
         },
         procesador = {
             bit: () => ua.match(/32|64/i)

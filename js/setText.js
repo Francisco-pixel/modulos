@@ -1,4 +1,4 @@
-import {d} from "./data.js";
+let d=document;
 export {setText}
 let setText=({atributo,text})=>{
     if(d.querySelector(atributo)){
