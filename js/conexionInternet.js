@@ -1,9 +1,10 @@
-let d=document,
-w=window;
+let w=window,
+d=document;
 export let conexionInternet = () => {
     /*Alerta de conexión*/
-    let conex = ({atributo,msn, color, sh}) => {
-        let conexion=d.querySelector(atributo);
+    let conex = ({msn, color, sh}) => {
+        let conexion=d.createElement("div");
+        d.body.appendChild(conexion);
         conexion.innerHTML = `${msn}`;
         conexion.style.top = "0%";
         conexion.style.color = `${color}`;
@@ -18,22 +19,20 @@ export let conexionInternet = () => {
         conexion.style.zIndex = `2`;
         setTimeout(() => {
             conexion.style.top = `-100%`;
-            conexion.style.color = ``;
+            /* conexion.style.color = ``;
             conexion.style.textShadow = ``;
-            conexion.style.background = ``;
+            conexion.style.background = ``; */
         }, 3000);
     }
     w.addEventListener("online", () => {
         conex({
-            "atributo":".conexion",
-            "msn":"¡Llegó el internet!",
+            "msn":"¡Llego el internet!",
             "color":"#73ff7e", 
             "sh":"0 0 5px #37ff04,0 0 20px #37ff04"
         });
     });
     w.addEventListener("offline", () => {
         conex({
-            "atributo":".conexion",
             "msn":"Se fue la conexion a internet", 
             "color":"#666"
         });
