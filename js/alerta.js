@@ -1,21 +1,20 @@
-export let alerta = ({atributo=".alerta",msn="No haz puesto un mensaje", color="#fff", sh,bg="#949494"}) => {
-    let conexion=document.querySelector(atributo);
-    conexion.innerHTML = `${msn}`;
-    conexion.style.top = "0%";
-    conexion.style.color = `${color}`;
-    conexion.style.textShadow = `${sh}`;
-    conexion.style.background = `${bg}`;
-    conexion.style.padding = `1rem`;
-    conexion.style.textAlign = `center`;
-    conexion.style.position = `fixed`;
-    conexion.style.top = `0`;
-    conexion.style.transition = `all 0.5s ease`;
-    conexion.style.width = `100%`;
-    conexion.style.zIndex = `2`;
+export {alerta};
+let alerta = ({msn="Mensaje de alerta", color="#fff", sh,bg="#949494"}) => {
+    let alert=document.createElement("p");
+    document.body.appendChild(alert)
+    alert.innerHTML = `${msn}`;
+    alert.style.top = "0%";
+    alert.style.color = `${color}`;
+    alert.style.textShadow = `${sh}`;
+    alert.style.background = `${bg}`;
+    alert.style.padding = `1rem`;
+    alert.style.textAlign = `center`;
+    alert.style.position = `fixed`;
+    alert.style.top = `0`;
+    alert.style.transition = `top 1s`;
+    alert.style.width = `100%`;
+    alert.style.zIndex = `2`;
     setTimeout(() => {
-        conexion.style.top = `-100%`;
-        conexion.style.color = ``;
-        conexion.style.textShadow = ``;
-        conexion.style.background = ``;
+        alert.style.top = `-100%`;
     }, 3000);
 }
